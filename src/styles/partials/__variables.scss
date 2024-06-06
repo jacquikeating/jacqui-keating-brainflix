@@ -1,0 +1,31 @@
+/* COLOURS ------------------------------------------------------ */
+$black: #323232; // primary text
+$blue: #0095FF; // primary CTA & active outlines
+$silver: #AFAFAF; // secondary text & labels
+$white: #FFFFFF; // bg & CTA text
+$darkblack: #000000; // player components
+$darkblue: #0065AD; // CTA hover state
+$mercury: #E1E1E1; // dividers & outlines
+$alabaster: #FAFAFA; // field bg
+
+
+/* LAYOUT ------------------------------------------------------- */
+$mobile-columns: auto; // 6
+$mobile-margin: 1.6rem;
+$mobile-headline-padding: 2.4rem;
+$mobile-padding: 1.6rem;
+$mobile-gutter: 1.6rem;
+
+$tablet-columns: auto; // 12
+$tablet-margin: 3.6rem;
+
+$td-headline-padding: 3.6rem;
+$td-padding: 2.4rem;
+$td-gutter: 2.4rem;
+
+$desktop-columns: 6.3rem; // 12
+$desktop-margin: auto;
+
+
+/* TYPOGRAPHY --------------------------------------------------- */
+$font-stack: 'Avenir Next', Arial, Verdana, sans-serif;
