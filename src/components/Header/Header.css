@@ -1,1 +1,106 @@
-/*# sourceMappingURL=Header.css.map */
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+.header {
+  display: grid;
+  grid-template-areas: "logo logo" "search avatar" "upload upload";
+  align-items: center;
+  margin: 0 1.6rem;
+}
+.header__logo {
+  background-color: white;
+  cursor: pointer;
+  grid-area: logo;
+  margin: 0.8rem auto 1.6rem auto;
+  width: 37%;
+}
+.header__search-bar {
+  grid-area: search;
+  position: relative;
+  flex: 1;
+}
+.header__search-field {
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 1em 1em 1em 3.6rem;
+}
+.header__search-field::-moz-placeholder {
+  font-size: 1.2rem;
+}
+.header__search-field::placeholder {
+  font-size: 1.2rem;
+}
+.header__search-field:active, .header__search-field:focus {
+  border: 2px solid #0095FF;
+}
+.header__search-field:invalid {
+  border: 2px solid #D22D2D;
+}
+.header__search-icon {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  height: 50%;
+}
+.header__avatar {
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  width: 11.25vw;
+  height: 11.25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-area: avatar;
+  margin: 0;
+}
+.header__upload-btn {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  width: 90%;
+  height: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  background-color: #0095FF;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  grid-area: upload;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .header__upload-btn {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+.header__upload-btn:hover, .header__upload-btn:focus, .header__upload-btn:active {
+  background-color: #0065AD;
+}
+.header__upload-icon {
+  justify-self: flex-start;
+}/*# sourceMappingURL=Header.css.map */
