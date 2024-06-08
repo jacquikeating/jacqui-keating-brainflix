@@ -7,27 +7,27 @@
     grid-template-areas:'logo logo' 
                         'search avatar'
                         'upload upload';
+    grid-template-columns: 1fr min-content;
+    gap: $mobile-padding;
     align-items: center;
     margin: 0 $mobile-margin;
 
     &__logo {
         @include logo;
         grid-area: logo;
-        margin: 0.8rem auto 1.6rem auto;
+        margin: 1rem auto 0 auto;
         width: 37%;
     }
 
     &__search-bar {
         grid-area: search;
         position: relative;
-        flex: 1;
-      
+        margin: 0;
     }
 
         &__search-field {
             @include field;
-            
-            padding: 1em 1em 1em 3.6rem;
+            padding: 1.1rem 0.8rem 0.9rem 3.6rem;
         }
 
         &__search-icon {
@@ -44,15 +44,7 @@
     }
 
     &__upload-btn {
-        @include cta(90%, 100%);
+        @include cta(100%);
         grid-area: upload;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    &__upload-icon {
-        justify-self: flex-start;
     }
 }

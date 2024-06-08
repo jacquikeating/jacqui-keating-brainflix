@@ -15,13 +15,19 @@
 }
 
 body {
-  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
   color: #323232;
 }
 
+@font-face {
+  src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-family: "Avenir Next Regular";
+}
 .header {
   display: grid;
   grid-template-areas: "logo logo" "search avatar" "upload upload";
+  grid-template-columns: 1fr min-content;
+  gap: 1.6rem;
   align-items: center;
   margin: 0 1.6rem;
 }
@@ -29,27 +35,33 @@ body {
   background-color: white;
   cursor: pointer;
   grid-area: logo;
-  margin: 0.8rem auto 1.6rem auto;
+  margin: 1rem auto 0 auto;
   width: 37%;
 }
 .header__search-bar {
   grid-area: search;
   position: relative;
-  flex: 1;
+  margin: 0;
 }
 .header__search-field {
   border-radius: 4px;
   border: 1px solid #E1E1E1;
-  padding: 1rem;
+  padding: 1.2rem;
+  width: 100%;
+  line-height: 1;
   font-size: 1.2rem;
   outline: none;
-  padding: 1em 1em 1em 3.6rem;
+  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  color: #323232;
+  padding: 1.1rem 0.8rem 0.9rem 3.6rem;
 }
 .header__search-field::-moz-placeholder {
   font-size: 1.2rem;
+  color: #323232;
 }
 .header__search-field::placeholder {
   font-size: 1.2rem;
+  color: #323232;
 }
 .header__search-field:active, .header__search-field:focus {
   border: 2px solid #0095FF;
@@ -70,6 +82,8 @@ body {
   height: 11.25vw;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   grid-area: avatar;
   margin: 0;
 }
@@ -77,20 +91,22 @@ body {
   line-height: 2rem;
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Avenir Next", Arial, Verdana, sans-serif;
-  width: 90%;
-  height: 100%;
+  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
   border-radius: 4px;
   border: none;
-  padding: 0;
+  padding: 1.4rem;
   background-color: #0095FF;
+  line-height: 1;
+  font-size: 1.1rem;
   text-transform: uppercase;
+  letter-spacing: 0.07rem;
   color: #FFFFFF;
   grid-area: upload;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
 }
 @media (min-width: 768px) {
   .header__upload-btn {
@@ -98,9 +114,12 @@ body {
     font-size: 1.2rem;
   }
 }
+.header__upload-btn > img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 50%;
+}
 .header__upload-btn:hover, .header__upload-btn:focus, .header__upload-btn:active {
   background-color: #0065AD;
-}
-.header__upload-icon {
-  justify-self: flex-start;
 }/*# sourceMappingURL=Header.css.map */
