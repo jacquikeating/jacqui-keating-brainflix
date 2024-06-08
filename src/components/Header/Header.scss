@@ -20,6 +20,12 @@
         margin: 0 $tablet-margin;
     }
 
+    @include desktop {
+        margin: 0 13rem;
+        grid-template-columns: 49% 18.2vw 11.6vw min-content;
+        gap: 2.4rem;
+    }
+
     &__logo {
         @include logo;
         grid-area: logo;
@@ -30,6 +36,10 @@
             margin: 0;
             width: 60%;
             height: 100%;
+        }
+
+        @include desktop {
+            width: 23.5%;
         }
     }
 
@@ -46,6 +56,10 @@
         &__search-field {
             @include field;
             padding: 1.1rem 0.8rem 0.9rem 3.6rem;
+
+            @include desktop {
+                padding: 1.3rem 0.8rem 1.1rem 3.6rem;
+            }
         }
 
         &__search-icon {
@@ -59,6 +73,10 @@
         @include avatar;
         grid-area: avatar;
         margin: 0;
+
+        @include desktop {
+            margin: 0 1.2rem;
+        }
     }
 
     &__upload-btn {

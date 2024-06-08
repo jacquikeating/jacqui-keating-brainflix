@@ -230,4 +230,9 @@
         width: 5.2vw;
         height: 5.2vw;
     }
+
+    @include desktop {
+        width: 3.25vw;
+        height: 3.25vw;
+    }
 }
