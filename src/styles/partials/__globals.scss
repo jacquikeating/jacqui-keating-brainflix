@@ -1,6 +1,5 @@
 @use './__variables.scss' as *;
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,4 +13,9 @@
 body {
     font-family: $font-stack;
     color: $black;
+}
+
+@font-face {
+    src: url('/src/assets/fonts/AvenirNextLTPro-Regular.otf');
+    font-family: 'Avenir Next Regular';
 }
