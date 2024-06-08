@@ -31,6 +31,15 @@ body {
   align-items: center;
   margin: 0 1.6rem;
 }
+@media (min-width: 768px) {
+  .header {
+    grid-template-areas: "logo search upload avatar";
+    grid-template-columns: 28% 35% 1fr min-content;
+    gap: 2rem;
+    padding-top: 1.6rem;
+    margin: 0 3.6rem;
+  }
+}
 .header__logo {
   background-color: white;
   cursor: pointer;
@@ -38,10 +47,22 @@ body {
   margin: 1rem auto 0 auto;
   width: 37%;
 }
+@media (min-width: 768px) {
+  .header__logo {
+    margin: 0;
+    width: 60%;
+    height: 100%;
+  }
+}
 .header__search-bar {
   grid-area: search;
   position: relative;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .header__search-bar {
+    width: 100%;
+  }
 }
 .header__search-field {
   border-radius: 4px;
@@ -87,6 +108,12 @@ body {
   grid-area: avatar;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .header__avatar {
+    width: 5.2vw;
+    height: 5.2vw;
+  }
+}
 .header__upload-btn {
   line-height: 2rem;
   font-size: 1rem;
@@ -111,7 +138,7 @@ body {
 @media (min-width: 768px) {
   .header__upload-btn {
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 .header__upload-btn > img {
@@ -122,4 +149,9 @@ body {
 }
 .header__upload-btn:hover, .header__upload-btn:focus, .header__upload-btn:active {
   background-color: #0065AD;
+}
+@media (min-width: 768px) {
+  .header__upload-btn {
+    padding: 1.2rem 1rem 0.8rem 1rem;
+  }
 }/*# sourceMappingURL=Header.css.map */

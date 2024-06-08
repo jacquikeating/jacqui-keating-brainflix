@@ -12,17 +12,35 @@
     align-items: center;
     margin: 0 $mobile-margin;
 
+    @include tablet {
+        grid-template-areas: 'logo search upload avatar';
+        grid-template-columns: 28% 35% 1fr min-content;
+        gap: 2rem;
+        padding-top: $mobile-margin;
+        margin: 0 $tablet-margin;
+    }
+
     &__logo {
         @include logo;
         grid-area: logo;
         margin: 1rem auto 0 auto;
         width: 37%;
+
+        @include tablet {
+            margin: 0;
+            width: 60%;
+            height: 100%;
+        }
     }
 
     &__search-bar {
         grid-area: search;
         position: relative;
         margin: 0;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
         &__search-field {
