@@ -1,0 +1,27 @@
+@use '../../../../styles/partials/__variables.scss' as *;
+@use '../../../../styles/partials/__mixins.scss' as *;
+@use '../../../../styles/partials/__globals.scss' as *;
+
+.video-stats {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid grey;
+    padding: $mobile-padding 0;
+
+    &__section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: $mobile-padding;
+    }
+
+        &__stat {
+            @include body-copy;
+
+            &--channel {
+                font-weight: bold;
+            }
+        }
+
+        
+}

@@ -1,0 +1,47 @@
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+.video-stats {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid grey;
+  padding: 1.6rem 0;
+}
+.video-stats__section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.video-stats__stat {
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .video-stats__stat {
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+  }
+}
+.video-stats__stat--channel {
+  font-weight: bold;
+}/*# sourceMappingURL=VideoStats.css.map */

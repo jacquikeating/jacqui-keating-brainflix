@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-import Header from '/src/components/Header/Header.jsx'
-import VideoPlayer from './components/VideoPlayer/VideoPlayer'
-import Comments from './components/Comments/Comments'
-import NextVideos from './components/NextVideos/NextVideos'
+import { useState } from 'react';
+import './App.css';
+import Header from '/src/components/Header/Header.jsx';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import Comments from './components/Comments/Comments';
+import NextVideos from './components/NextVideos/NextVideos';
 
 
 function App() {
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
