@@ -60,7 +60,7 @@ body {
 @media (min-width: 768px) {
   .video-stats__stat {
     line-height: 2.2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 .video-stats__stat--channel {

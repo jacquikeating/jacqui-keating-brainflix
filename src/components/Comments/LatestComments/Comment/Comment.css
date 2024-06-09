@@ -34,25 +34,64 @@ body {
   src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
   font-weight: 700;
 }
-.comments {
-  margin: 0 1.6rem;
+.comment {
+  border-top: 1px solid #E1E1E1;
+  padding: 1.2rem 0;
+  display: flex;
+  gap: 1.6rem;
 }
 @media (min-width: 768px) {
-  .comments {
-    margin: 0 3.6rem;
+  .comment {
+    padding: 2.4rem 0 2rem 0;
+    gap: 2.2rem;
   }
 }
-.comments__counter {
+.comment__avatar {
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  width: 11.25vw;
+  height: 11.25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+@media (min-width: 768px) {
+  .comment__avatar {
+    width: 5.2vw;
+    height: 5.2vw;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__avatar {
+    width: 3.25vw;
+    height: 3.25vw;
+  }
+}
+.comment__text {
   line-height: 1.8rem;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-bottom: 1.6rem;
-  font-weight: 600;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 0.8rem;
 }
 @media (min-width: 768px) {
-  .comments__counter {
+  .comment__text {
     line-height: 2.2rem;
     font-size: 1.3rem;
   }
-}/*# sourceMappingURL=Comments.css.map */
+}
+@media (min-width: 768px) {
+  .comment__text {
+    gap: 0.4rem;
+  }
+}
+.comment__username {
+  font-weight: 600;
+}
+.comment__date {
+  color: #AFAFAF;
+}/*# sourceMappingURL=Comment.css.map */
