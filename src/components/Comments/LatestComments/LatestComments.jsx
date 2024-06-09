@@ -2,7 +2,6 @@ import './LatestComments.scss'
 import Comment from './Comment/Comment.jsx'
 
 function LatestComments({data}) {
-
     return (
         <ul className="comments-list">
             {data.map((comment) => (

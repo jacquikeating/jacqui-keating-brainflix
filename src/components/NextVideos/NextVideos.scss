@@ -1,0 +1,16 @@
+@use '../../styles/partials/_globals' as *;
+@use '../../styles/partials/__mixins' as *;
+@use '../../styles/partials/__variables' as *;
+
+.next-videos {
+    margin: 1.7rem $mobile-margin;
+
+    &__title {
+        @include labels-btns;
+        margin-bottom: 1.3rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+}
