@@ -1,1 +1,58 @@
-/*# sourceMappingURL=Comments.css.map */
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+}
+.comments {
+  margin: 0 1.6rem;
+}
+@media (min-width: 768px) {
+  .comments {
+    margin: 0 3.6rem;
+  }
+}
+.comments__counter {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .comments__counter {
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=Comments.css.map */

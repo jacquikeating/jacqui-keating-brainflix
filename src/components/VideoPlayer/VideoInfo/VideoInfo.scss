@@ -1,10 +1,17 @@
 @use '../../../styles/partials/_globals' as *;
 @use '../../../styles/partials/__variables' as *;
+@use '../../../styles/partials/__mixins' as *;
 
 .video-info {
     margin: $mobile-margin;
 
     &__title {
+        @include page-header;
+        margin: 1.3rem 0;
+    }
+
+    &__description {
+        @include body-copy;
         margin: $mobile-padding 0;
     }
 }

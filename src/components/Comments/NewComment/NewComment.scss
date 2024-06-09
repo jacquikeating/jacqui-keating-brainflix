@@ -1,0 +1,68 @@
+@use '../../../styles/partials/__variables.scss' as *;
+@use '../../../styles/partials/__mixins.scss' as *;
+@use '../../../styles/partials/__globals.scss' as *;
+
+.new-comment {
+    display: flex;
+    gap: $mobile-margin;
+
+    &__user-avatar {
+        @include avatar;
+        margin-top: 2rem;
+    }
+
+    &__right-subsection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__label {
+        @include labels-btns;
+        margin: 0rem 0 0.9rem 0;
+        width: 100%;
+        display: block;
+
+        @include tablet {
+            margin: 0 2.3rem 0.9rem 0.5rem;
+        }
+    }
+
+    &__text {
+        @include field;
+        width: 100%;
+        height: 29vw;
+
+        @include tablet {
+            height: 5.2vw;
+            padding-top: 1.4rem;
+        }
+    }
+
+    &__btn {
+        @include cta(100%);
+
+        @include tablet {
+            margin-top: 1.95rem;
+            height: min-content;
+            width: 33%;
+        }
+    }
+
+}
+
+
+/*
+<"new-comment">
+            <"new-comment__user-avatar"/>
+            <"new-comment__right-subsection">
+                <"new-comment__label">
+                <"new-comment__text"<
+               "new-comment__btn">
+                    "new-comment__icon"/>
+
+                */

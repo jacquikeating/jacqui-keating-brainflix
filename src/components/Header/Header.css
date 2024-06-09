@@ -15,13 +15,24 @@
 }
 
 body {
-  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
   color: #323232;
 }
 
 @font-face {
+  font-family: "Avenir Next";
   src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
-  font-family: "Avenir Next Regular";
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
 }
 .header {
   display: grid;
@@ -84,7 +95,7 @@ body {
   line-height: 1;
   font-size: 1.2rem;
   outline: none;
-  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
   color: #323232;
   padding: 1.1rem 0.8rem 0.9rem 3.6rem;
 }
@@ -144,9 +155,12 @@ body {
 }
 .header__upload-btn {
   line-height: 2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  color: #AFAFAF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +171,8 @@ body {
   padding: 1.4rem;
   background-color: #0095FF;
   line-height: 1;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.07rem;
   color: #FFFFFF;

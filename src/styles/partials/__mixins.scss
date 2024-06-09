@@ -83,6 +83,7 @@
     line-height: 3.2rem;
     font-size: 2.4rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
 
     @include tablet {
         line-height: 4.4rem;
@@ -94,6 +95,7 @@
     line-height: 2rem;
     font-size: 1.2rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
 
     @include tablet {
         line-height: 2rem;
@@ -105,6 +107,7 @@
     line-height: 1.8rem;
     font-size: 1.3rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
     
     @include tablet {
         
@@ -113,20 +116,24 @@
 
 @mixin body-copy {
     line-height: 1.8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    letter-spacing: 0.03em;
 
     @include tablet {
         line-height: 2.2rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
 @mixin labels-btns {
     line-height: 2rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 400;
     font-family: $font-stack;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    color: $silver;
 
     @include tablet {
         line-height: 2rem;
@@ -157,7 +164,8 @@
     padding: 1.4rem;
     background-color: $blue;
     line-height: 1; 
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.07rem;
     color: $white;

@@ -1,0 +1,39 @@
+@use '../../../../styles/partials/__variables.scss' as *;
+@use '../../../../styles/partials/__mixins.scss' as *;
+@use '../../../../styles/partials/__globals.scss' as *;
+
+.comment {
+    border-top: 1px solid $mercury; 
+    padding: 1.2rem 0;
+    display: flex;
+    gap: $mobile-padding;
+
+    @include tablet {
+        padding: 2.4rem 0 2rem 0;
+        gap: 2.2rem;
+    }
+
+    &__avatar {
+        @include avatar;
+    }
+
+    &__text {
+        @include body-copy;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 0.8rem;
+
+        @include tablet {
+            gap: 0.4rem;
+        }
+    }
+
+        &__username {
+            font-weight: 600;
+        }
+
+        &__date {
+            color: $silver;
+        }
+}

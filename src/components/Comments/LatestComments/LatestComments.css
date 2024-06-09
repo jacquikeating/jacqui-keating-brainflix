@@ -1,0 +1,41 @@
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+}
+.comments-list {
+  margin-top: 1.6rem;
+  list-style: none;
+  border-bottom: 1px solid #E1E1E1;
+}/*# sourceMappingURL=LatestComments.css.map */

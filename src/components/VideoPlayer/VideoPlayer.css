@@ -12,13 +12,24 @@
 }
 
 body {
-  font-family: "Avenir Next Regular", Arial, Verdana, sans-serif;
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
   color: #323232;
 }
 
 @font-face {
+  font-family: "Avenir Next";
   src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
-  font-family: "Avenir Next Regular";
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
 }
 .video-section {
   padding-top: 1.6rem;
