@@ -9,11 +9,26 @@
     border-bottom: 1px solid $mercury;
     padding: $mobile-padding 0 1.4rem 0;
 
+    @include tablet  {
+        border-top: none;
+        border-bottom: 2px solid $mercury;
+        justify-content: space-between;
+        padding: 0.6rem 0 0.6rem 0;
+    }
+
     &__section {
         width: 50%;
         display: flex;
         flex-direction: column;
         gap: $mobile-padding;
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        &:nth-of-type(2) {
+            justify-content: flex-end;
+        }
     }
 
         &__stat {
@@ -26,6 +41,16 @@
             &--channel {
                 font-weight: 600;
                 color: $black;
+
+                @include tablet {
+                    font-size: 1.3rem!important;
+                    margin-left: 0!important;
+                }
+            }
+            
+            @include tablet {
+                font-size: 1.2rem;
+                margin-left: 1.6rem;
             }
         }  
         

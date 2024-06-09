@@ -5,13 +5,26 @@
 .video-info {
     margin: $mobile-margin;
 
+    @include tablet {
+        margin: 0 $tablet-margin;
+    }
+
     &__title {
         @include page-header;
         margin: 1.3rem 0;
+
+        @include tablet {
+            margin: 2.2rem 0 0 0;
+        }
     }
 
     &__description {
         @include body-copy;
         margin: $mobile-padding 0;
+
+        @include tablet {
+            width: 95%;
+            margin: 2.5rem 0;
+        }
     }
 }
