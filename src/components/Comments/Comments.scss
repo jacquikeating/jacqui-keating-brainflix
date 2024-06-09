@@ -4,4 +4,10 @@
 
 .comments {
     margin: 0 $mobile-margin;
+
+    &__counter {
+        @include body-copy;
+        margin-bottom: $mobile-padding;
+        font-weight: 600;
+    }
 }

@@ -155,9 +155,11 @@ body {
 }
 .header__upload-btn {
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
   font-family: "Avenir Next", Arial, Verdana, sans-serif;
   letter-spacing: 0.01em;
+  text-transform: uppercase;
   color: #AFAFAF;
   display: flex;
   justify-content: center;
@@ -170,6 +172,7 @@ body {
   background-color: #0095FF;
   line-height: 1;
   font-size: 1.2rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.07rem;
   color: #FFFFFF;

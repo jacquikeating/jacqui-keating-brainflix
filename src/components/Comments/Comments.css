@@ -36,4 +36,18 @@ body {
 }
 .comments {
   margin: 0 1.6rem;
+}
+.comments__counter {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .comments__counter {
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=Comments.css.map */
