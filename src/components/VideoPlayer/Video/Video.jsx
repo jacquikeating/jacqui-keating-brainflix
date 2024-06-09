@@ -26,7 +26,7 @@ function Video({ data }) {
         //     <ul className="video__controls">
         //         <li>
         //             <button className="video__controls video__controls--playpause">
-        //                 <img src="/src/assets/images/play.svg" className="video__icon" />
+        //                 <img src="/src/assets/images/play.svg" className="video__icon" alt="Play" />
         //             </button>
         //         </li>
         //         <li className="video__controls video__controls--progress">
@@ -34,12 +34,12 @@ function Video({ data }) {
         //         </li>
         //         <li>
         //             <button className="video__controls video__controls--volume">
-        //                 <img src="/src/assets/images/volume_up.svg" className="video__icon" />
+        //                 <img src="/src/assets/images/volume_up.svg" className="video__icon" alt="Full Screen" />
         //             </button>
         //         </li>
         //         <li>
         //             <button className="video__controls video__controls--fullscreen">
-        //             <img src="/src/assets/images/fullscreen.svg" className="video__icon" />
+        //             <img src="/src/assets/images/fullscreen.svg" className="video__icon" alt="Volume" />
         //             </button>
         //         </li>
         //     </ul>

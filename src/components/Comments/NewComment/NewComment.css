@@ -1,0 +1,61 @@
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+}
+.new-comment {
+  display: flex;
+}
+.new-comment__user-avatar {
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  width: 11.25vw;
+  height: 11.25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+@media (min-width: 768px) {
+  .new-comment__user-avatar {
+    width: 5.2vw;
+    height: 5.2vw;
+  }
+}
+@media (min-width: 1280px) {
+  .new-comment__user-avatar {
+    width: 3.25vw;
+    height: 3.25vw;
+  }
+}/*# sourceMappingURL=NewComment.css.map */

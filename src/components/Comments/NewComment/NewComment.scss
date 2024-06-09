@@ -1,0 +1,12 @@
+@use '../../../styles/partials/__variables.scss' as *;
+@use '../../../styles/partials/__mixins.scss' as *;
+@use '../../../styles/partials/__globals.scss' as *;
+
+.new-comment {
+    display: flex;
+
+    &__user-avatar {
+        @include avatar;
+    }
+
+}

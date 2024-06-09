@@ -11,10 +11,10 @@ function VideoStats({ data }) {
             </div>
             <div className="video-stats__section">
                 <p className="video-stats__stat">
-                    <img src="/src/assets/images/views.svg" className="video-stats__icon" />
+                    <img src="/src/assets/images/views.svg" className="video-stats__icon" alt="Views" />
                     {data.views}</p>
                 <p className="video-stats__stat">
-                <img src="/src/assets/images/likes.svg" className="video-stats__icon" />
+                <img src="/src/assets/images/likes.svg" className="video-stats__icon" alt="Likes" />
                     {data.likes}</p>
             </div>
         </div>
