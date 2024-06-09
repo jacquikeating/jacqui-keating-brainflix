@@ -8,12 +8,21 @@
     display: flex;
     gap: $mobile-gutter;
 
+    @include tablet {
+        margin-top: 2.4rem;
+        line-height: 1.4;
+    }
 
     &__image {
         border-radius: 4px;
         width: 31.25vw;
         height: 18.75vw;
         object-fit: cover;
+
+        @include tablet {
+            width: 14.3vw;
+            height: 8.6vw;
+        }
     }
 
     &__text {
@@ -22,6 +31,11 @@
         flex-direction: column;
         justify-content: space-between;
         font-size: 1.1rem;
+
+        @include tablet {
+            width: 24%;
+            font-size: 1.3rem;
+        }
     }
 
         &__title {

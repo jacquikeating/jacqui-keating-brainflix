@@ -43,15 +43,14 @@
                 color: $black;
 
                 @include tablet {
-                    font-size: 1.3rem!important;
-                    margin-left: 0!important;
+                    font-size: 1.3rem !important;
+                    margin-left: 0 !important;
                 }
-            }
-            
+            } 
+          
             @include tablet {
                 font-size: 1.2rem;
                 margin-left: 1.6rem;
             }
         }  
-        
 }
