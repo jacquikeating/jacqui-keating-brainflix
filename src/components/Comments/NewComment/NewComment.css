@@ -66,14 +66,20 @@ body {
   flex-direction: column;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .new-comment__right-subsection {
+    flex-direction: row;
+  }
+}
 .new-comment__label {
   line-height: 2rem;
   font-size: 1.1rem;
   font-weight: 400;
   font-family: "Avenir Next", Arial, Verdana, sans-serif;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.07rem;
   text-transform: uppercase;
   color: #AFAFAF;
+  margin: 0rem 0 0.9rem 0;
   width: 100%;
   display: block;
 }
@@ -81,6 +87,11 @@ body {
   .new-comment__label {
     line-height: 2rem;
     font-size: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .new-comment__label {
+    margin: 0 2.3rem 0.9rem 0.5rem;
   }
 }
 .new-comment__text {
@@ -93,7 +104,6 @@ body {
   outline: none;
   font-family: "Avenir Next", Arial, Verdana, sans-serif;
   color: #323232;
-  margin: 0rem 0 0.9rem 0;
   width: 100%;
   height: 29vw;
 }
@@ -111,12 +121,18 @@ body {
 .new-comment__text:invalid {
   border: 2px solid #D22D2D;
 }
+@media (min-width: 768px) {
+  .new-comment__text {
+    height: 5.2vw;
+    padding-top: 1.4rem;
+  }
+}
 .new-comment__btn {
   line-height: 2rem;
   font-size: 1.1rem;
   font-weight: 400;
   font-family: "Avenir Next", Arial, Verdana, sans-serif;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.07rem;
   text-transform: uppercase;
   color: #AFAFAF;
   display: flex;
@@ -153,6 +169,14 @@ body {
 @media (min-width: 768px) {
   .new-comment__btn {
     padding: 1.2rem 1rem 0.8rem 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .new-comment__btn {
+    margin-top: 1.95rem;
+    height: -moz-min-content;
+    height: min-content;
+    width: 33%;
   }
 }
 
