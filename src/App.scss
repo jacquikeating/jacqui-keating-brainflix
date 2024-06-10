@@ -20,11 +20,17 @@
         }
     }
     &__left {
-        width: 90%;
+
+        @include desktop {
+            width: 90%;
+        }
     }
     
     &__right {
-        border-left: 1px solid $mercury;
-        padding-left: 2.2rem;
+
+        @include desktop {
+            border-left: 2px solid $mercury;
+            padding-left: 2.2rem;
+        }
     }
 }

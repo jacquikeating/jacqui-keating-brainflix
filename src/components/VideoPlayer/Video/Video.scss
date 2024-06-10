@@ -2,15 +2,9 @@
 @use '../../../styles/partials/__mixins' as *;
 @use '../../../styles/partials/__variables' as *;
 
-
 .video {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
     max-height: 57.2vw;
-    background-color: $darkblack;
+    overflow: hidden;
 
     @include tablet {
         max-height: 51.4vw;
@@ -19,23 +13,28 @@
     @include desktop {
         max-height: 37.5vw;
     }
-}
 
-.video__container {
-    padding-bottom: 56.25%;
-    width: 100%;
-    position: relative;
-}
-
-.video__player {
-    max-height: 57.2vw;
-    overflow: hidden;
-
-       @include tablet {
-        max-height: 51.4vw;
+    &__container {
+        padding-bottom: 56.25%;
+        width: 100%;
+        position: relative;
     }
 
-    @include desktop {
-        max-height: 37.5vw;
+    &__player {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        max-height: 57.2vw;
+        background-color: $darkblack;
+    
+        @include tablet {
+            max-height: 51.4vw;
+        }
+    
+        @include desktop {
+            max-height: 37.5vw;
+        }
     }
 }

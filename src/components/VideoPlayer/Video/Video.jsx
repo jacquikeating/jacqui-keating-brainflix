@@ -1,11 +1,11 @@
-import './Video.css';
+import './Video.scss';
 
 function Video({ currentVid }) {
     console.log(currentVid)
         return (
-            <section className="video__player">
+            <section className="video">
                         <div className="video__container">
-                            <video className="video" poster={currentVid.image} controls></video>
+                            <video className="video__player" poster={currentVid.image} controls></video>
                         </div>
             </section>
 
