@@ -34,58 +34,69 @@ body {
 /* MEDIA QUERIES ------------------------------------------------ */
 /* TYPOGRAPHY --------------------------------------------------- */
 /* ELEMENTS ----------------------------------------------------- */
-.video-info {
-  margin: 1.6rem 0;
-}
-@media (min-width: 768px) {
-  .video-info {
-    margin: 0;
-  }
-}
-@media (min-width: 1280px) {
-  .video-info {
-    margin: 3rem 0;
-  }
-}
-.video-info__title {
-  line-height: 3.2rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  margin: 1.3rem 0;
-}
-@media (min-width: 768px) {
-  .video-info__title {
-    line-height: 4.4rem;
-    font-size: 3.3rem;
-  }
-}
-@media (min-width: 768px) {
-  .video-info__title {
-    margin: 2.2rem 0 0 0;
-  }
-}
-.video-info__description {
+.video-preview {
   line-height: 1.8rem;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin: 1.6rem 0;
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1.6rem;
 }
 @media (min-width: 768px) {
-  .video-info__description {
+  .video-preview {
     line-height: 2.2rem;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 768px) {
-  .video-info__description {
-    width: 95%;
-    margin: 2.5rem 0;
+  .video-preview {
+    margin-top: 2.4rem;
+    line-height: 1.4;
   }
 }
 @media (min-width: 1280px) {
-  .video-info__description {
-    padding-right: 2.2rem;
+  .video-preview:first-of-type {
+    margin-top: 1.3rem;
   }
-}/*# sourceMappingURL=VideoInfo.css.map */
+}
+.video-preview__image {
+  border-radius: 4px;
+  width: 31.25vw;
+  height: 18.75vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .video-preview__image {
+    width: 14.3vw;
+    height: 8.6vw;
+  }
+}
+@media (min-width: 1280px) {
+  .video-preview__image {
+    width: 8.5vw;
+    height: 5.3vw;
+  }
+}
+.video-preview__text {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .video-preview__text {
+    width: 24%;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .video-preview__text {
+    width: 100%;
+  }
+}
+.video-preview__title {
+  font-weight: 600;
+}/*# sourceMappingURL=VideoPreview.css.map */

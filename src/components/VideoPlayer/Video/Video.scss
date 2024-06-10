@@ -1,8 +1,13 @@
+@use '../../../styles/partials/_globals' as *;
+@use '../../../styles/partials/__mixins' as *;
+@use '../../../styles/partials/__variables' as *;
+
 .video__image {
     width: 100%;
-    height: 200px;
-}
+    background-color: $darkblack;
 
-.video {
-    width: 100%;
+    @include tablet {
+        height: 51.4vw;
+        object-fit: scale-down;
+    }
 }

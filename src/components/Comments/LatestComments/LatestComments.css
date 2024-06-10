@@ -38,4 +38,9 @@ body {
   margin-top: 1.6rem;
   list-style: none;
   border-bottom: 1px solid #E1E1E1;
+}
+@media (min-width: 1280px) {
+  .comments-list {
+    margin-top: 0.6rem;
+  }
 }/*# sourceMappingURL=LatestComments.css.map */

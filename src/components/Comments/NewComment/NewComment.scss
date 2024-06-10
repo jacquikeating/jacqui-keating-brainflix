@@ -6,9 +6,18 @@
     display: flex;
     gap: $mobile-margin;
 
+    
+    @include desktop {
+        padding-right: 2.2rem;
+    }
+
     &__user-avatar {
         @include avatar;
         margin-top: 2rem;
+        
+        @include desktop {
+            margin-left: 1rem;
+        }
     }
 
     &__right-subsection {
@@ -41,6 +50,10 @@
             height: 5.2vw;
             padding-top: 1.4rem;
         }
+
+        @include desktop {
+            height: 3.2vw;
+        }
     }
 
     &__btn {
@@ -52,17 +65,4 @@
             width: 33%;
         }
     }
-
 }
-
-
-/*
-<"new-comment">
-            <"new-comment__user-avatar"/>
-            <"new-comment__right-subsection">
-                <"new-comment__label">
-                <"new-comment__text"<
-               "new-comment__btn">
-                    "new-comment__icon"/>
-
-                */

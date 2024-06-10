@@ -1,0 +1,59 @@
+@use '../../../styles/partials/_globals' as *;
+@use '../../../styles/partials/__mixins' as *;
+@use '../../../styles/partials/__variables' as *;
+
+.video-preview {
+    @include body-copy;
+    margin-top: 1.2rem;
+    display: flex;
+    gap: $mobile-gutter;
+
+    @include tablet {
+        margin-top: 2.4rem;
+        line-height: 1.4;
+    }
+
+    @include desktop {
+        &:first-of-type {
+            margin-top: 1.3rem;
+        }
+    }
+
+    &__image {
+        border-radius: 4px;
+        width: 31.25vw;
+        height: 18.75vw;
+        object-fit: cover;
+
+        @include tablet {
+            width: 14.3vw;
+            height: 8.6vw;
+        }
+
+        @include desktop {
+            width: 8.5vw;
+            height: 5.3vw;
+        }
+    }
+
+    &__text {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.1rem;
+
+        @include tablet {
+            width: 24%;
+            font-size: 1.3rem;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+        &__title {
+            font-weight: 600;
+        }
+}

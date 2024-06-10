@@ -1,1 +1,60 @@
-/*# sourceMappingURL=App.css.map */
+/* COLOURS ------------------------------------------------------ */
+/* LAYOUT ------------------------------------------------------- */
+/* TYPOGRAPHY --------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Avenir Next", Arial, Verdana, sans-serif;
+  color: #323232;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+}
+/* MEDIA QUERIES ------------------------------------------------ */
+/* TYPOGRAPHY --------------------------------------------------- */
+/* ELEMENTS ----------------------------------------------------- */
+.app__info-container {
+  margin: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .app__info-container {
+    margin: 0 3.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .app__info-container {
+    margin: 0 13rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.app__left {
+  width: 90%;
+}
+.app__right {
+  border-left: 1px solid #E1E1E1;
+  padding-left: 2.2rem;
+}/*# sourceMappingURL=App.css.map */

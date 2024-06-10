@@ -10,20 +10,21 @@
     grid-template-columns: 1fr min-content;
     gap: $mobile-padding;
     align-items: center;
-    margin: 0 $mobile-margin;
+    margin: 0 $mobile-margin 1.6rem $mobile-margin;
 
     @include tablet {
         grid-template-areas: 'logo search upload avatar';
         grid-template-columns: 28% 35% 1fr min-content;
         gap: 2rem;
-        padding-top: $mobile-margin;
+        padding: 1.4rem 0;
         margin: 0 $tablet-margin;
     }
 
     @include desktop {
         margin: 0 13rem;
-        grid-template-columns: 49% 18.2vw 11.6vw min-content;
+        grid-template-columns: 48.5% 18.8vw 11.7vw min-content;
         gap: 2.4rem;
+        padding: 1.3rem 0;
     }
 
     &__logo {
@@ -49,6 +50,10 @@
         margin: 0;
 
         @include tablet {
+            width: 98%;
+        }
+
+        @include desktop {
             width: 100%;
         }
     }
@@ -82,5 +87,13 @@
     &__upload-btn {
         @include cta(100%);
         grid-area: upload;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
     }
 }
