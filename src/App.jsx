@@ -25,7 +25,7 @@ function App() {
             <VideoInfo currentVid={currentVid} />
             <Comments currentVid={currentVid} />
           </div>
-          <div class="app__right">
+          <div className="app__right">
           <NextVideos currentVid={currentVid} setCurrentVid={setCurrentVid} switchVideo={switchVideo} />
           </div>
         </div>

@@ -38,6 +38,11 @@ body {
   display: flex;
   gap: 1.6rem;
 }
+@media (min-width: 1280px) {
+  .new-comment {
+    padding-right: 2.2rem;
+  }
+}
 .new-comment__user-avatar {
   border-radius: 50%;
   background-color: #E1E1E1;
@@ -59,6 +64,11 @@ body {
   .new-comment__user-avatar {
     width: 3.25vw;
     height: 3.25vw;
+  }
+}
+@media (min-width: 1280px) {
+  .new-comment__user-avatar {
+    margin-left: 1rem;
   }
 }
 .new-comment__right-subsection {
@@ -127,6 +137,11 @@ body {
     padding-top: 1.4rem;
   }
 }
+@media (min-width: 1280px) {
+  .new-comment__text {
+    height: 3.2vw;
+  }
+}
 .new-comment__btn {
   line-height: 2rem;
   font-size: 1.1rem;
@@ -178,15 +193,4 @@ body {
     height: min-content;
     width: 33%;
   }
-}
-
-/*
-<"new-comment">
-            <"new-comment__user-avatar"/>
-            <"new-comment__right-subsection">
-                <"new-comment__label">
-                <"new-comment__text"<
-               "new-comment__btn">
-                    "new-comment__icon"/>
-
-                *//*# sourceMappingURL=NewComment.css.map */
+}/*# sourceMappingURL=NewComment.css.map */

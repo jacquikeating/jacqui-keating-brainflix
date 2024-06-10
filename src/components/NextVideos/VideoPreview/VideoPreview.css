@@ -55,6 +55,11 @@ body {
     line-height: 1.4;
   }
 }
+@media (min-width: 1280px) {
+  .video-preview:first-of-type {
+    margin-top: 1.3rem;
+  }
+}
 .video-preview__image {
   border-radius: 4px;
   width: 31.25vw;
@@ -68,6 +73,12 @@ body {
     height: 8.6vw;
   }
 }
+@media (min-width: 1280px) {
+  .video-preview__image {
+    width: 8.5vw;
+    height: 5.3vw;
+  }
+}
 .video-preview__text {
   width: 53%;
   display: flex;
@@ -79,6 +90,11 @@ body {
   .video-preview__text {
     width: 24%;
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .video-preview__text {
+    width: 100%;
   }
 }
 .video-preview__title {

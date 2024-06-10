@@ -3,14 +3,14 @@
 @use '../../../styles/partials/__mixins' as *;
 
 .video-info {
-    margin: $mobile-margin;
+    margin: $mobile-margin 0;
 
     @include tablet {
-        margin: 0 $tablet-margin;
+        margin: 0;
     }
 
     @include desktop {
-        margin: 3rem $tablet-margin;
+        margin: 3rem 0;
     }
 
     &__title {
@@ -29,6 +29,10 @@
         @include tablet {
             width: 95%;
             margin: 2.5rem 0;
+        }
+
+        @include desktop {
+            padding-right: 2.2rem;
         }
     }
 }

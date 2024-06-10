@@ -35,16 +35,16 @@ body {
 /* TYPOGRAPHY --------------------------------------------------- */
 /* ELEMENTS ----------------------------------------------------- */
 .video-info {
-  margin: 1.6rem;
+  margin: 1.6rem 0;
 }
 @media (min-width: 768px) {
   .video-info {
-    margin: 0 3.6rem;
+    margin: 0;
   }
 }
 @media (min-width: 1280px) {
   .video-info {
-    margin: 3rem 3.6rem;
+    margin: 3rem 0;
   }
 }
 .video-info__title {
@@ -82,5 +82,10 @@ body {
   .video-info__description {
     width: 95%;
     margin: 2.5rem 0;
+  }
+}
+@media (min-width: 1280px) {
+  .video-info__description {
+    padding-right: 2.2rem;
   }
 }/*# sourceMappingURL=VideoInfo.css.map */

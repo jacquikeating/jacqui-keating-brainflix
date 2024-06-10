@@ -13,6 +13,12 @@
         line-height: 1.4;
     }
 
+    @include desktop {
+        &:first-of-type {
+            margin-top: 1.3rem;
+        }
+    }
+
     &__image {
         border-radius: 4px;
         width: 31.25vw;
@@ -22,6 +28,11 @@
         @include tablet {
             width: 14.3vw;
             height: 8.6vw;
+        }
+
+        @include desktop {
+            width: 8.5vw;
+            height: 5.3vw;
         }
     }
 
@@ -35,6 +46,10 @@
         @include tablet {
             width: 24%;
             font-size: 1.3rem;
+        }
+
+        @include desktop {
+            width: 100%;
         }
     }
 

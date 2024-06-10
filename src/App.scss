@@ -1,7 +1,30 @@
+@use './styles/partials/_globals' as *;
+@use './styles/partials/__mixins' as *;
+@use './styles/partials/__variables' as *;
+
 .app {
   
     &__info-container {
-        // margin: 0 13rem;
+        margin: 0 $mobile-margin;
         display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            margin: 0 $tablet-margin;
+        }
+
+        @include desktop {
+            margin: 0 13rem;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &__left {
+        width: 90%;
+    }
+    
+    &__right {
+        border-left: 1px solid $mercury;
+        padding-left: 2.2rem;
     }
 }

@@ -44,9 +44,13 @@ body {
 @media (min-width: 768px) {
   .video-stats {
     border-top: none;
-    border-bottom: 2px solid #E1E1E1;
     justify-content: space-between;
     padding: 0.6rem 0 0.6rem 0;
+  }
+}
+@media (min-width: 1280px) {
+  .video-stats {
+    padding-right: 2.2rem;
   }
 }
 .video-stats__section {
@@ -93,5 +97,10 @@ body {
   .video-stats__stat {
     font-size: 1.2rem;
     margin-left: 1.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .video-stats__stat {
+    margin-left: 0.8rem;
   }
 }/*# sourceMappingURL=VideoStats.css.map */

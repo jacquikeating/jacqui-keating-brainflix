@@ -3,11 +3,19 @@
 @use '../../styles/partials/__variables' as *;
 
 .next-videos {
-    margin: 1.7rem $mobile-margin;
+    margin: 1.7rem 0;
+
+    @include desktop {
+        margin: 2.9rem 0 7rem 0;
+    }
 
     &__title {
         @include labels-btns;
         margin-bottom: 1.3rem;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
     }
 
     &__list {

@@ -6,4 +6,8 @@
     margin-top: $mobile-padding;
     list-style: none;
     border-bottom: 1px solid $mercury;
+
+    @include desktop {
+        margin-top: 0.6rem;
+    }
 }
