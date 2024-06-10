@@ -7,6 +7,7 @@
     margin-top: 1.2rem;
     display: flex;
     gap: $mobile-gutter;
+    cursor: pointer;
 
     @include tablet {
         margin-top: 2.4rem;
