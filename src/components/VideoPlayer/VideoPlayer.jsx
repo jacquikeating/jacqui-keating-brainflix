@@ -6,7 +6,7 @@ function VideoPlayer({ currentVid }) {
     return (
         <section className="video-section">
             <Video data={currentVid} />
-            <VideoInfo data={currentVid} />
+            {/* <VideoInfo data={currentVid} /> */}
         </section>
     )
 }

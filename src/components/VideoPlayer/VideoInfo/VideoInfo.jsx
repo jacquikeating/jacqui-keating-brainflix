@@ -1,13 +1,13 @@
 import './VideoInfo.css';
 import VideoStats from './VideoStats/VideoStats.jsx';
 
-function VideoInfo({ data }) {
+function VideoInfo({ currentVid }) {
     return (
-        <div className="video-info">
-            <h1 className="video-info__title">{data.title}</h1>
-            <VideoStats data={data} />
-            <p className="video-info__description">{data.description}</p>
-        </div>
+        <section className="video-info">
+            <h1 className="video-info__title">{currentVid.title}</h1>
+            <VideoStats data={currentVid} />
+            <p className="video-info__description">{currentVid.description}</p>
+        </section>
     )
 }
 

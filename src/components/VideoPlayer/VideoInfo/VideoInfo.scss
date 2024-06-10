@@ -9,6 +9,10 @@
         margin: 0 $tablet-margin;
     }
 
+    @include desktop {
+        margin: 3rem $tablet-margin;
+    }
+
     &__title {
         @include page-header;
         margin: 1.3rem 0;

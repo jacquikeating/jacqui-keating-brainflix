@@ -42,6 +42,11 @@ body {
     margin: 0 3.6rem;
   }
 }
+@media (min-width: 1280px) {
+  .video-info {
+    margin: 3rem 3.6rem;
+  }
+}
 .video-info__title {
   line-height: 3.2rem;
   font-size: 2.4rem;
