@@ -51,6 +51,7 @@ body {
 @media (min-width: 1280px) {
   .video-stats {
     padding-right: 2.2rem;
+    border-bottom: 2px solid #E1E1E1;
   }
 }
 .video-stats__section {

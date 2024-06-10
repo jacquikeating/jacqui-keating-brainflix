@@ -3,10 +3,14 @@
 @use '../../styles/partials/__variables' as *;
 
 .next-videos {
-    margin: 1.7rem 0;
+    margin: 1.7rem 0 4rem 0;
+
+    @include tablet {
+        margin: 1.7rem 0 3.2rem 0;
+    }
 
     @include desktop {
-        margin: 2.9rem 0 7rem 0;
+        margin: 3.2rem 0 7rem 0;
     }
 
     &__title {

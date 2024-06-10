@@ -1,4 +1,4 @@
-import './VideoInfo.css';
+import './VideoInfo.scss';
 import VideoStats from './VideoStats/VideoStats.jsx';
 
 function VideoInfo({ currentVid }) {

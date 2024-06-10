@@ -51,10 +51,14 @@ body {
     justify-content: center;
   }
 }
-.app__left {
-  width: 90%;
+@media (min-width: 1280px) {
+  .app__left {
+    width: 90%;
+  }
 }
-.app__right {
-  border-left: 1px solid #E1E1E1;
-  padding-left: 2.2rem;
+@media (min-width: 1280px) {
+  .app__right {
+    border-left: 2px solid #E1E1E1;
+    padding-left: 2.2rem;
+  }
 }/*# sourceMappingURL=App.css.map */

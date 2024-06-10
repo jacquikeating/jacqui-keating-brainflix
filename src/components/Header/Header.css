@@ -152,6 +152,8 @@ body {
   .header__avatar {
     width: 3.25vw;
     height: 3.25vw;
+    margin-left: 1rem;
+    margin-right: 1.4rem;
   }
 }
 @media (min-width: 1280px) {

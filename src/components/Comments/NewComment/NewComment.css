@@ -64,6 +64,8 @@ body {
   .new-comment__user-avatar {
     width: 3.25vw;
     height: 3.25vw;
+    margin-left: 1rem;
+    margin-right: 1.4rem;
   }
 }
 @media (min-width: 1280px) {
@@ -188,7 +190,7 @@ body {
 }
 @media (min-width: 768px) {
   .new-comment__btn {
-    margin-top: 1.95rem;
+    margin-top: 2rem;
     height: -moz-min-content;
     height: min-content;
     width: 33%;

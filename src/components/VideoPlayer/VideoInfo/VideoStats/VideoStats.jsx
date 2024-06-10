@@ -1,4 +1,4 @@
-import './VideoStats.css';
+import './VideoStats.scss';
 
 function VideoStats({ data }) {
     data.timestamp = new Date(data.timestamp).toLocaleDateString('en-US');
