@@ -1,11 +1,10 @@
 import './VideoPlayer.css';
 import Video from './Video/Video.jsx';
-import VideoInfo from './VideoInfo/VideoInfo.jsx';
 
 function VideoPlayer({ currentVid }) {
     return (
         <section className="video-section">
-            <Video data={currentVid} />
+            <Video currentVid={currentVid} />
             {/* <VideoInfo data={currentVid} /> */}
         </section>
     )

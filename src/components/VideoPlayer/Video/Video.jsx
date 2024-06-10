@@ -1,14 +1,14 @@
 import './Video.css';
 
-function Video({ data }) {
+function Video({ currentVid }) {
+    console.log(currentVid)
         return (
-        <div className="video">
-            <img 
-                src={data.image}
-                className="video__image"
-                alt="Video preview"
-             />
-        </div>
+            <section className="video__player">
+                        <div className="video__container">
+                            <video className="video" poster={currentVid.image} controls></video>
+                        </div>
+            </section>
+
     ) 
 }
 export default Video;
