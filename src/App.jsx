@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import './App.scss';
 import VideoDetails from '/src/data/video-details.json';
 import Header from '/src/components/Header/Header.jsx';
@@ -10,23 +11,42 @@ import NextVideos from './components/NextVideos/NextVideos';
 
 function App() {
   const [currentVid, setCurrentVid] = useState(VideoDetails[0]);
+  const [vidsArr, setVidsArr] = useState([]);
+  const apiURL = "https://unit-3-project-api-0a5620414506.herokuapp.com";
+  const apiKey = "?api_key=d2109fe3-90af-4534-8c02-f75a38d310c8";
   
-  function switchVideo (selectedVideo) {
+  function switchVideo(selectedVideo) {
     setCurrentVid(selectedVideo);
   }
+
+  const fetchVidsArr = async () => {
+    try {
+      const response = await axios.get(
+        `${apiURL}/videos/${apiKey}`
+      );
+      setVidsArr(response.data);
+      console.log(vidsArr);
+    } catch (error) {
+      console.error(error)
+    }
+  };
+
+  useEffect(() => {
+    fetchVidsArr();
+  }, []);
 
   return (
     <div className="app">
       <Header />
       <main className="app__main">
-        <VideoPlayer currentVid={currentVid} />
+        <VideoPlayer currentVid={currentVid} apiURL={apiURL} apiKey={apiKey} />
         <div className="app__info-container">
           <div className="app__left">
             <VideoInfo currentVid={currentVid} />
             <Comments currentVid={currentVid} />
           </div>
           <div className="app__right">
-          <NextVideos currentVid={currentVid} setCurrentVid={setCurrentVid} switchVideo={switchVideo} />
+          <NextVideos currentVid={currentVid} setCurrentVid={setCurrentVid} switchVideo={switchVideo} vidsArr={vidsArr} />
           </div>
         </div>
       </main>
