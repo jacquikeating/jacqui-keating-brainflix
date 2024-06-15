@@ -25,7 +25,7 @@ function App() {
         `${apiURL}/videos/${apiKey}`
       );
       setVidsArr(response.data);
-      console.log(vidsArr);
+      console.log(response.data);
     } catch (error) {
       console.error(error)
     }
