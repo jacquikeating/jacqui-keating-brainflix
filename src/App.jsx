@@ -38,18 +38,14 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <main className="app__main">
+      <main className="selected-video">
         <VideoPlayer currentVid={currentVid} apiURL={apiURL} apiKey={apiKey} />
-        <div className="app__info-container">
-          <div className="app__left">
+        <div className="selected-video__details">
             <VideoInfo currentVid={currentVid} />
             <Comments currentVid={currentVid} />
           </div>
-          <div className="app__right">
-          <NextVideos currentVid={currentVid} setCurrentVid={setCurrentVid} switchVideo={switchVideo} vidsArr={vidsArr} />
-          </div>
-        </div>
       </main>
+      <NextVideos currentVid={currentVid} setCurrentVid={setCurrentVid} switchVideo={switchVideo} vidsArr={vidsArr} />
     </div>
   )
 }
