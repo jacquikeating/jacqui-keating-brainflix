@@ -1,6 +1,6 @@
-@use '../../../../styles/partials/__variables.scss' as *;
-@use '../../../../styles/partials/__mixins.scss' as *;
-@use '../../../../styles/partials/__globals.scss' as *;
+@use '../../styles/partials/__variables.scss' as *;
+@use '../../styles/partials/__mixins.scss' as *;
+@use '../../styles/partials/__globals.scss' as *;
 
 .comment {
     border-top: 1px solid $mercury; 
@@ -14,7 +14,7 @@
     }
 
     @include desktop {
-        padding-right: 2.2rem;
+        padding: 2.6rem 2.2rem 2.2rem 0;
     }
 
     &__avatar {

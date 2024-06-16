@@ -1,16 +1,16 @@
-import LatestComments from "./LatestComments/LatestComments";
-import NewComment from "./NewComment/NewComment";
+import CommentsList from "./CommentsList";
+import NewComment from "./NewComment";
 import './Comments.scss';
 
-function Comments({ currentVid }) {
+function Comments({ selectedVid }) {
 
     return (
         <section className="comments">
-            <p className="comments__counter">{currentVid.comments.length} Comments</p>
+            <p className="comments__counter">{selectedVid.comments.length} Comments</p>
             <NewComment />
-            <LatestComments data={currentVid.comments} />
+            <CommentsList commentsArr={selectedVid.comments} />
         </section>
-    )
-}
+    );
+};
 
 export default Comments;

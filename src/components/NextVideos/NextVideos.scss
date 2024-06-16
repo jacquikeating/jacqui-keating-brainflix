@@ -3,23 +3,22 @@
 @use '../../styles/partials/__variables' as *;
 
 .next-videos {
-    margin: 1.7rem 0 4rem 0;
+    margin: 1.7rem $mobile-margin 4rem $mobile-margin;
 
     @include tablet {
-        margin: 1.7rem 0 3.2rem 0;
+        margin: 2.8rem $tablet-margin 3.2rem $tablet-margin;
     }
 
     @include desktop {
-        margin: 3.2rem 0 7rem 0;
+        display: inline-block;
+        margin: 0;
+        border-left: 2px solid $mercury;
+        padding: 3.2rem 0 7rem 2.2rem;
+        width: 28.4vw;
     }
 
     &__title {
         @include labels-btns;
-        margin-bottom: 1.3rem;
-
-        @include desktop {
-            margin-bottom: 0;
-        }
     }
 
     &__list {
