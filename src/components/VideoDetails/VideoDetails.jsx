@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { getSingleVideoDetailsEndpoint } from '/src/utils/api-utils.js';
-import VideoPlayer from '/src/components/VideoPlayer/VideoPlayer.jsx';
-import VideoInfo from '/src/components/VideoPlayer/VideoInfo.jsx';
+import VideoPlayer from '/src/components/VideoDetails/VideoPlayer.jsx';
+import VideoInfo from '/src/components/VideoDetails/VideoInfo.jsx';
 import Comments from '/src/components/Comments/Comments.jsx';
 import './VideoDetails.scss';
 
@@ -14,8 +14,8 @@ const VideoDetails = ({ selectedVidId }) => {
             let response = await axios.get(getSingleVideoDetailsEndpoint(selectedVidId));
             setSelectedVid(response.data);
         } catch (error) {
-            console.error(error)
-        }
+            console.error(error);
+        };
     };
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const VideoDetails = ({ selectedVidId }) => {
 
     if (selectedVid === null) {
         return <div>loading...</div>;
-    }
+    };
 
     return (
         <main className="video-page__main">

@@ -6,7 +6,7 @@
     margin: 1.7rem $mobile-margin 4rem $mobile-margin;
 
     @include tablet {
-        margin: 1.7rem $tablet-margin 3.2rem $tablet-margin;
+        margin: 2.8rem $tablet-margin 3.2rem $tablet-margin;
     }
 
     @include desktop {
@@ -19,11 +19,6 @@
 
     &__title {
         @include labels-btns;
-        margin-bottom: 1.3rem;
-
-        @include desktop {
-            margin-bottom: 0;
-        }
     }
 
     &__list {

@@ -1,0 +1,19 @@
+@use '../../styles/partials/_globals' as *;
+@use '../../styles/partials/__mixins' as *;
+@use '../../styles/partials/__variables' as *;
+
+.video-page {
+    &__details {
+        margin: 0 $mobile-margin;
+    
+        @include tablet {
+            margin: 0 $tablet-margin;
+        }
+
+        @include desktop {
+            margin: 0.3rem 0 0 13rem; 
+            width: 54.3vw;
+            float: left;
+        }
+    }
+}

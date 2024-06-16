@@ -4,17 +4,17 @@
 
 .selected-video {
   
-    &__details {
-        margin: 0 $mobile-margin;
+    // &__details {
+    //     margin: 0 $mobile-margin;
 
-        @include tablet {
-            margin: 0 $tablet-margin;
-        }
+    //     @include tablet {
+    //         margin: 0 $tablet-margin 0 0;
+    //     }
 
-        @include desktop {
-            margin: 0.3rem 0 0 13rem; 
-            width: 54.3vw;
-            float: left;
-        }
-    }
+    //     @include desktop {
+    //         margin: 0.3rem 0 0 13rem; 
+    //         width: 54.3vw;
+    //         float: left;
+    //     }
+    // }
 }
