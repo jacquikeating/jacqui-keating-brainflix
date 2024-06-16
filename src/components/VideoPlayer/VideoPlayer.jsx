@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './VideoPlayer.scss';
-import Video from './Video/Video.jsx';
+import Video from './Video.jsx';
 
 function VideoPlayer({ currentVid, apiURL, apiKey  }) {
     // const [vidDetails, setVidDetails] = useState(null);

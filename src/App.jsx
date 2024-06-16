@@ -4,7 +4,7 @@ import './App.scss';
 import VideoDetails from '/src/data/video-details.json';
 import Header from '/src/components/Header/Header.jsx';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import VideoInfo from './components/VideoPlayer/VideoInfo/VideoInfo';
+import VideoInfo from './components/VideoPlayer/VideoInfo';
 import Comments from './components/Comments/Comments';
 import NextVideos from './components/NextVideos/NextVideos';
 

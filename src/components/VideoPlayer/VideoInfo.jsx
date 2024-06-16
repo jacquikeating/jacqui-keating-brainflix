@@ -1,5 +1,5 @@
 import './VideoInfo.scss';
-import VideoStats from './VideoStats/VideoStats.jsx';
+import VideoStats from './VideoStats.jsx';
 
 function VideoInfo({ currentVid }) {
     return (

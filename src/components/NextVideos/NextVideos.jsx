@@ -1,5 +1,5 @@
 import './NextVideos.scss'
-import VideoPreview from './VideoPreview/VideoPreview.jsx';
+import VideoPreview from './VideoPreview.jsx';
 import  videoDetails from '/src/data/video-details.json';
 
 function NextVideos({ currentVid, setCurrentVid }) {

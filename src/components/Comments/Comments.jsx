@@ -1,5 +1,5 @@
-import LatestComments from "./LatestComments/LatestComments";
-import NewComment from "./NewComment/NewComment";
+import CommentsList from "./CommentsList";
+import NewComment from "./NewComment";
 import './Comments.scss';
 
 function Comments({ currentVid }) {
@@ -8,7 +8,7 @@ function Comments({ currentVid }) {
         <section className="comments">
             <p className="comments__counter">{currentVid.comments.length} Comments</p>
             <NewComment />
-            <LatestComments data={currentVid.comments} />
+            <CommentsList data={currentVid.comments} />
         </section>
     )
 }
