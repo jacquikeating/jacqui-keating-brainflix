@@ -1,14 +1,14 @@
-import './CommentsList.scss'
-import Comment from './Comment.jsx'
+import Comment from './Comment.jsx';
+import './CommentsList.scss';
 
-function CommentsList({data}) {
+function CommentsList({ commentsArr }) {
     return (
         <ul className="comments-list">
-            {data.map((comment) => (
+            {commentsArr.map((comment) => (
                 <Comment key={comment.id} name={comment.name} timestamp={comment.timestamp} text={comment.comment} />
             ))}
         </ul>
-    )
-}
+    );
+};
 
 export default CommentsList;

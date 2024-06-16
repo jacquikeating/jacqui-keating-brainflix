@@ -1,12 +1,12 @@
 import './VideoInfo.scss';
 import VideoStats from './VideoStats.jsx';
 
-function VideoInfo({ currentVid }) {
+function VideoInfo({ selectedVid }) {
     return (
         <section className="video-info">
-            <h1 className="video-info__title">{currentVid.title}</h1>
-            <VideoStats data={currentVid} />
-            <p className="video-info__description">{currentVid.description}</p>
+            <h1 className="video-info__title">{selectedVid.title}</h1>
+            <VideoStats data={selectedVid} />
+            <p className="video-info__description">{selectedVid.description}</p>
         </section>
     )
 }

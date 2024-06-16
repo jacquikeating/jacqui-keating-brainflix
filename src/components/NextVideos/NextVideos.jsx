@@ -10,8 +10,10 @@ function NextVideos({ filteredVidsArr }) {
             <p className="next-videos__title">Next Videos</p>
             <ul className="next-videos__list">
                 {filteredVidsArr.map((video) => {
-                    <VideoPreview key={video.id} title={video.title} image={video.image} channel={video.channel} id={video.id} setCurrentVid={setCurrentVid}/>
-            })}
+                    return(
+                        <VideoPreview key={video.id} title={video.title} image={video.image} channel={video.channel} id={video.id} />
+                    )
+                })}
             </ul>
         </section>
     )
