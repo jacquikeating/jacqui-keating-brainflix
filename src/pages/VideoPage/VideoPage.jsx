@@ -18,12 +18,12 @@ const VideoPage = () => {
       getVidsArr();
   }, []);
 
-  if (vidsArr.length < 1) {
-    return <p>loading...</p>;
+  if (vidsArr.length == 0) {
+    return <p>Loading videos...</p>;
   };
 
   const selectedVidId =  vidId || vidsArr[0].id; 
-  
+
   const filteredVidsArr = vidsArr.filter((vid) => {
       return selectedVidId !== vid.id;
   });

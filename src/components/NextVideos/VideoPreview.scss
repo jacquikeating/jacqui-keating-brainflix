@@ -7,6 +7,8 @@
     margin-top: 1.2rem;
     display: flex;
     gap: $mobile-gutter;
+    text-decoration: none;
+    color: $black;
 
     @include tablet {
         margin-top: 2.4rem;
