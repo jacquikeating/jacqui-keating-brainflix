@@ -3,7 +3,7 @@ import axios from 'axios';
 import './VideoPlayer.scss';
 import Video from './Video.jsx';
 
-function VideoPlayer({ currentVid, apiURL, apiKey  }) {
+function VideoPlayer({ selectedVid  }) {
     // const [vidDetails, setVidDetails] = useState(null);
 
     // const fetchVidDetails = async () => {
@@ -25,7 +25,7 @@ function VideoPlayer({ currentVid, apiURL, apiKey  }) {
 
     return (
         <section className="video-section">
-            <Video currentVid={currentVid} />
+            <Video selectedVid={selectedVid} />
         </section>
     )
 }
