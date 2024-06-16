@@ -52,7 +52,7 @@ const VideoPage = () => {
       </main> */}
       <NextVideos filteredVidsArr={filteredVidsArr} />
     </div>
-  )
+  );
 }
 
 
