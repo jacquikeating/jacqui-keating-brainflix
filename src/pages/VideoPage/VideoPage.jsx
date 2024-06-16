@@ -22,8 +22,8 @@ const VideoPage = () => {
     return <p>loading...</p>;
   };
 
-  const selectedVidId =  vidId || vidsArr[0].id; // "84e96018-4022-434e-80bf-000ce4cd12b8" 
-
+  const selectedVidId =  vidId || vidsArr[0].id; 
+  
   const filteredVidsArr = vidsArr.filter((vid) => {
       return selectedVidId !== vid.id;
   });
