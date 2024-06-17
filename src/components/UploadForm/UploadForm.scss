@@ -1,0 +1,23 @@
+@use '../../styles/partials/_globals' as *;
+@use '../../styles/partials/__mixins' as *;
+@use '../../styles/partials/__variables' as *;
+
+.upload {
+    &__form {
+        padding-top: $mobile-padding;
+    }
+
+    &__label {
+        @include labels-btns;
+        display: block;
+    }
+
+    &__input {
+        @include field;
+        display: block;
+    }
+
+    &__thumbnail {
+        max-width: 100%;
+    }
+}

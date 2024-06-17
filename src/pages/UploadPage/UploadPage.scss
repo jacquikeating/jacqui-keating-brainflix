@@ -1,0 +1,13 @@
+@use '../../styles/partials/_globals' as *;
+@use '../../styles/partials/__mixins' as *;
+@use '../../styles/partials/__variables' as *;
+
+.upload {
+    border-top: 1px solid $mercury;
+    padding: $mobile-padding;
+
+    &__heading {
+        @include page-header;
+        letter-spacing: 0;
+    }
+}

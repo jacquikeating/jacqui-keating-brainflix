@@ -14,7 +14,8 @@ function Header() {
             <img className="header__avatar" src="/src/assets/images/Mohan-muruge.jpg" alt="Your avatar" />
             <Link to="/upload" className="header__upload-link">
                 <button className="header__upload-btn">
-                    <img className="header__upload-icon" src="/src/assets/images/upload.svg" alt="Up arrow" />Upload
+                    <img className="header__upload-icon" src="/src/assets/images/upload.svg" alt="Up arrow" />
+                    Upload
                 </button>
             </Link>
             
