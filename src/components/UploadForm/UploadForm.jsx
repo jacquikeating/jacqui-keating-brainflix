@@ -1,8 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 import './UploadForm.scss';
     
 const UploadForm = () => {
+    const redirectHome = useNavigate();
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        alert("Your video was successfully uploaded!");
+        redirectHome("/");
+    }
+
     return (
-        <form className="upload__form">
+        <form className="upload__form" onSubmit={handleSubmit}>
             <div className="upload__form-body">
                 <div className="upload__form-left">
                     <label className="upload__label">
