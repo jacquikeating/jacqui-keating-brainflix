@@ -17,18 +17,27 @@ body {
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url('/src/assets/fonts/AvenirNextLTPro-Regular.otf');
+    src: 
+        local('Avenir Next Regular'),
+        url('/src/assets/fonts/AvenirNextLTPro-Regular.otf') format("opentype"),
+        url('/src/assets/fonts/AvenirNextLTPro-Regular.ttf') format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url('/src/assets/fonts/AvenirNextLTPro-Demi.otf');
+    src: 
+        local('Avenir Next Demi'),
+        url('/src/assets/fonts/AvenirNextLTPro-Demi.otf') format("opentype"),
+        url('/src/assets/fonts/AvenirNextLTPro-Demi.ttf') format("truetype");
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url('/src/assets/fonts/AvenirNextLTPro-Bold.otf');
+    src: 
+        local('Avenir Next Bold'),
+        url('/src/assets/fonts/AvenirNextLTPro-Bold.otf') format("opentype"),
+        url('/src/assets/fonts/AvenirNextLTPro-Bold.ttf') format("truetype");
     font-weight: 700;
 }

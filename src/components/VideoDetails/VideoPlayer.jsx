@@ -7,7 +7,7 @@ function VideoPlayer({ selectedVid  }) {
                 <video className="video__player" poster={selectedVid.image} controls></video>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default VideoPlayer;

@@ -4,7 +4,6 @@ import Header from '/src/components/Header/Header.jsx';
 import VideoPage from '/src/pages/VideoPage/VideoPage.jsx';
 import UploadPage from '/src/pages/UploadPage/UploadPage.jsx';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +14,7 @@ function App() {
           <Route path="/upload" element={<UploadPage />} />
         </Routes>
       </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;

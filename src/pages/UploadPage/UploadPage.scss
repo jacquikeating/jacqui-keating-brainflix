@@ -1,0 +1,27 @@
+@use '../../styles/partials/_globals' as *;
+@use '../../styles/partials/__mixins' as *;
+@use '../../styles/partials/__variables' as *;
+
+.upload {
+    border-top: 1px solid $mercury;
+    padding: 2.3rem $mobile-padding;
+
+    &__heading {
+        @include page-header;
+        letter-spacing: 0;
+
+        @include tablet {
+            margin: 1.5rem 0 0 0;
+            padding-bottom: 2rem;
+        }
+    }
+
+    @include tablet {
+        border-top: 2px solid $mercury;
+        padding: 2.3rem $tablet-margin;
+    }
+
+    @include desktop {
+        padding: 2.3rem 13rem 35.5rem 13rem;
+    }
+}

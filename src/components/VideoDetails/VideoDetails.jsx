@@ -23,7 +23,7 @@ const VideoDetails = ({ selectedVidId }) => {
     }, [selectedVidId]);
 
     if (selectedVid === null) {
-        return <div>loading...</div>;
+        return <p className="loading">Loading video...</p>;
     };
 
     return (

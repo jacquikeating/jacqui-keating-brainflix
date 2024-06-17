@@ -1,10 +1,7 @@
-import './NextVideos.scss'
+import './NextVideos.scss';
 import VideoPreview from './VideoPreview.jsx';
-// import  videoDetails from '/src/data/video-details.json';
 
-function NextVideos({ filteredVidsArr }) {
-    // let vidList = videoDetails.filter((video) => video.id !== currentVid.id)
-    
+function NextVideos({ filteredVidsArr }) {    
     return (
         <section className="next-videos">
             <p className="next-videos__title">Next Videos</p>
@@ -16,7 +13,7 @@ function NextVideos({ filteredVidsArr }) {
                 })}
             </ul>
         </section>
-    )
-}
+    );
+};
 
 export default NextVideos;

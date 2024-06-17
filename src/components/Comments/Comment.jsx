@@ -12,7 +12,7 @@ function Comment({ name, timestamp, text }) {
                 <p className="comment__body">{text}</p>
             </div>
         </li>
-    )
-}
+    );
+};
 
 export default Comment;
