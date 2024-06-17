@@ -11,8 +11,12 @@ const VideoPage = () => {
   const { vidId } = useParams();
 
   const getVidsArr = async () => {
-    let response = await axios.get(getAllVideosEndpoint());
-    setVidsArr(response.data);
+    try {
+      let response = await axios.get(getAllVideosEndpoint());
+      setVidsArr(response.data);
+    } catch (error) {
+      console.error(error);
+    };
   };
 
   useEffect(() => {
