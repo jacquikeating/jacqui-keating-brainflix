@@ -4,10 +4,25 @@
 
 .upload {
     border-top: 1px solid $mercury;
-    padding: $mobile-padding;
+    padding: 2.3rem $mobile-padding;
 
     &__heading {
         @include page-header;
         letter-spacing: 0;
+
+        @include tablet {
+            margin: 3.8rem 0 0 0;
+            padding-bottom: 2rem;
+        }
+    }
+
+    @include tablet {
+        border-top: 2px solid $mercury;
+        padding: 2.3rem $tablet-margin;
+    }
+
+    @include desktop {
+        border-top: 1px solid $mercury;
+        padding: 0.1rem 13rem;
     }
 }

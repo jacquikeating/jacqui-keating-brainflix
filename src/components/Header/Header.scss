@@ -93,11 +93,12 @@
 
     &__upload-link {
         text-decoration: none;
+        grid-area: upload;
+
     }
 
     &__upload-btn {
         @include cta(100%);
-        grid-area: upload;
 
         @include tablet {
             width: 95%;
