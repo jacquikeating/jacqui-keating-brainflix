@@ -22,7 +22,7 @@ function VideoInfo({ selectedVid }) {
         </div>
             <p className="video-info__description">{selectedVid.description}</p>
         </section>
-    )
-}
+    );
+};
 
 export default VideoInfo;
