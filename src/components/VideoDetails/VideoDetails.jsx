@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { getSingleVideoDetailsEndpoint } from '/src/utils/api-utils.js';
-import VideoPlayer from '/src/components/VideoDetails/VideoPlayer.jsx';
-import VideoInfo from '/src/components/VideoDetails/VideoInfo.jsx';
+import VideoPlayer from '/src/components/VideoPlayer/VideoPlayer.jsx';
+import VideoInfo from '/src/components/VideoInfo/VideoInfo.jsx';
 import Comments from '/src/components/Comments/Comments.jsx';
 import './VideoDetails.scss';
 

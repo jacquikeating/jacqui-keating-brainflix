@@ -1,5 +1,5 @@
-import CommentsList from "./CommentsList";
-import NewComment from "./NewComment";
+import CommentsList from "/src/components/CommentsList/CommentsList";
+import NewComment from "/src/components/NewComment/NewComment";
 import './Comments.scss';
 
 function Comments({ selectedVid }) {

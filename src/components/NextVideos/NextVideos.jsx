@@ -1,5 +1,5 @@
 import './NextVideos.scss';
-import VideoPreview from './VideoPreview.jsx';
+import VideoPreview from '/src/components/VideoPreview/VideoPreview.jsx';
 
 function NextVideos({ filteredVidsArr }) {    
     return (
