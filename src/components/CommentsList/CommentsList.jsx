@@ -1,4 +1,4 @@
-import Comment from './Comment.jsx';
+import Comment from '/src/components/Comment/Comment.jsx';
 import './CommentsList.scss';
 
 function CommentsList({ commentsArr }) {
