@@ -7,7 +7,7 @@ function Comments({ selectedVid }) {
     return (
         <section className="comments">
             <p className="comments__counter">{selectedVid.comments.length} Comments</p>
-            <NewComment />
+            <NewComment selectedVid={selectedVid} />
             <CommentsList commentsArr={selectedVid.comments} />
         </section>
     );
