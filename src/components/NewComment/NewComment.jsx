@@ -1,42 +1,26 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
 import { getSingleVideoDetailsEndpoint } from '/src/utils/api-utils.js';
 import "./NewComment.scss";
 
-function NewComment({ selectedVid, setSelectedVid }) {
-    console.log(selectedVid)
-    // const [videoDetails, setVideoDetails] = useState(selectedVid);
-
-    const getCommentsData = async() => {
-        try {
-            let response = await axios.get(getSingleVideoDetailsEndpoint(selectedVid.id));
-        } catch (error) {
-            console.error(error);
-        };
-    };
+function NewComment({ selectedVid }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        postData(event);
-        const updatedVideoDetails = getCommentsData();
-        console.log(updatedVideoDetails)
-        // setSelectedVid(updatedVideoDetails);
-        // alert("Comment submitted");
-        
-    }
+        postData(event); 
+        // Comments can be posted, but the component does not yet automatically re-render
+        // For now, must refresh to see new comments
+    };
 
     async function postData(eventRec) {
         try {
             const res = await axios.post(getSingleVideoDetailsEndpoint(selectedVid.id) + "comments/", {
                 comment: eventRec.target.newCommentText.value
             });
-            // console.log(res);
             eventRec.target.reset();
-            console.log(res)
         } catch (err) {
             console.log("Error", err);
         }
-    }
+    };
 
     return (
         <form className="new-comment" onSubmit={handleSubmit}>
@@ -52,6 +36,6 @@ function NewComment({ selectedVid, setSelectedVid }) {
             </div>
         </form>
     )
-}
+};
 
 export default NewComment;
