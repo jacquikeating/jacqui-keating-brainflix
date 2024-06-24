@@ -31,7 +31,7 @@ const VideoDetails = ({ selectedVidId }) => {
             <VideoPlayer selectedVid={selectedVid} />
             <div className="video-page__details">
                 <VideoInfo selectedVid={selectedVid} />
-                <Comments selectedVid={selectedVid} />
+                <Comments selectedVid={selectedVid} setSelectedVid={setSelectedVid} />
             </div>
         </main>
     );
